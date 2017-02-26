@@ -1,0 +1,292 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" charset="utf-8" />
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js">
+</script>
+<link href="cssStyle.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+ c_timeout=1000;
+   c_timeoutLong=2600;
+   c_timeoutOpas=800;
+   
+function param(){
+   $("#centrWin").css("width",(screen.height-160)+"px");
+
+ CenterWidth=$("#center").css("width");
+ $("#center").css("height",CenterWidth);
+ $("#center").css("height",CenterWidth);
+ CenterHeight=CenterWidth;
+ CenterMargParamLeft=$("#center").css("margin-left");
+ $("#center").css("margin-top",CenterMargParamLeft);
+ CenterMargParamTop=CenterMargParamLeft;
+ 
+ LeftTopMargParamLeft=$("#hightLeft").css("margin-left");
+ $("#hightLeft").css("margin-top",LeftTopMargParamLeft);
+ LeftTopMargParamTop=LeftTopMargParamLeft;
+ LeftTopWidth=$("#hightLeft").css("width");
+ $("#hightLeft").css("height",LeftTopWidth);
+ LeftTopHeight=LeftTopWidth;
+ 
+ RightTopMargParamLeft=$("#hightRight").css("margin-left");
+ $("#hightRight").css("margin-top",LeftTopMargParamLeft);
+ RightTopMargParamTop=LeftTopMargParamLeft;
+ RightTopWidth=$("#hightRight").css("width");
+ $("#hightRight").css("height",RightTopWidth);
+ RightTopHeight=RightTopWidth;
+
+ LeftBottomMargParamLeft=$("#lowLeft").css("margin-left");
+ $("#lowLeft").css("margin-top",RightTopMargParamLeft);
+ LeftBottomMargParamTop=RightTopMargParamLeft;
+ LeftBottomWidth=$("#lowLeft").css("width");
+ $("#lowLeft").css("height",LeftBottomWidth);
+ LeftBottomHeight= LeftBottomWidth;
+
+ RightBottomMargParamLeft=$("#lowRight").css("margin-left");
+ $("#lowRight").css("margin-top",RightTopMargParamLeft);
+ RightBottomMargParamTop=RightTopMargParamLeft;
+ RightBottomWidth=$("#lowRight").css("width");
+ $("#lowRight").css("height",RightBottomWidth);
+ RightBottomHeight= RightBottomWidth;
+
+}
+
+function advent(){
+$("#center").dblclick(function(){
+if($("#center").css("height")!=CenterHeight){
+$("#center").animate({opacity:"0.4"},c_timeoutOpas).animate({marginTop:CenterMargParamTop,marginLeft:CenterMargParamLeft,height:CenterHeight,width:CenterWidth,zIndex:"100"},c_timeout)
+                                         .animate({opacity:"1"},c_timeoutOpas);
+$("#hightRight").animate({marginTop:RightTopMargParamTop,marginLeft:RightTopMargParamLeft,height:RightTopHeight,width:RightTopWidth,zIndex:"90"},c_timeoutLong);
+$("#hightLeft").animate({marginTop:LeftTopMargParamTop,marginLeft:LeftTopMargParamLeft,height:LeftTopHeight,width:LeftTopWidth,zIndex:"90"},c_timeoutLong);
+$("#lowLeft").animate({marginTop:LeftBottomMargParamTop,marginLeft:LeftBottomMargParamLeft,height:LeftBottomHeight,width:LeftBottomWidth,zIndex:"90"},c_timeoutLong);
+$("#lowRight").animate({marginTop:RightBottomMargParamTop,marginLeft:RightBottomMargParamLeft,height:RightBottomHeight,width:RightBottomWidth,zIndex:"90"},c_timeoutLong);
+
+setTimeout(function(){
+	$("#center").attr("class","wCentr");
+    $("#hightRight").attr("class","wTopRightBack");
+    $("#hightLeft").attr("class","wTopLeftBack");
+    $("#lowLeft").attr("class","wBottomLeftBack");
+    $("#lowRight").attr("class","wBottomRightBack");},c_timeout);
+}});
+$("#hightRight").dblclick(function(){
+if($("#hightRight").css("height")!=CenterHeight){
+
+$("#hightRight").animate({opacity:"0.4"},c_timeoutOpas).animate({marginTop:CenterMargParamTop,marginLeft:CenterMargParamLeft,height:CenterHeight,width:CenterWidth,zIndex:"100"},c_timeout)
+                 .animate({opacity:"1"},c_timeoutOpas);
+$("#center").animate({opacity:"1"},c_timeoutOpas).animate({marginTop:RightTopMargParamTop,marginLeft:RightTopMargParamLeft,height:RightTopHeight,width:RightTopWidth,zIndex:"90"},c_timeout)
+             .animate({opacity:"1"},c_timeoutOpas);
+			 
+$("#hightLeft").animate({marginTop:LeftTopMargParamTop,marginLeft:LeftTopMargParamLeft,height:LeftTopHeight,width:LeftTopWidth,zIndex:"90"},c_timeoutLong);
+$("#lowLeft").animate({marginTop:LeftBottomMargParamTop,marginLeft:LeftBottomMargParamLeft,height:LeftBottomHeight,width:LeftBottomWidth,zIndex:"90"},c_timeoutLong);
+$("#lowRight").animate({marginTop:RightBottomMargParamTop,marginLeft:RightBottomMargParamLeft,height:RightBottomHeight,width:RightBottomWidth,zIndex:"90"},c_timeoutLong);
+
+setTimeout(function(){
+	$("#center").attr("class","wCentrBack");
+    $("#hightRight").attr("class","wTopRight");
+    $("#hightLeft").attr("class","wTopLeftBack");
+    $("#lowLeft").attr("class","wBottomLeftBack");
+    $("#lowRight").attr("class","wBottomRightBack");},c_timeout);
+}});
+$("#hightLeft").dblclick(function(){
+if($("#hightLeft").css("height")!=CenterHeight){
+$("#hightLeft").animate({opacity:"0.4"},c_timeoutOpas);
+$("#center").animate({opacity:"1"},c_timeoutOpas);
+$("#hightLeft").animate({marginTop:CenterMargParamTop,marginLeft:CenterMargParamLeft,height:CenterHeight,width:CenterWidth,zIndex:"100"},c_timeout);
+$("#center").animate({marginTop:LeftTopMargParamTop,marginLeft:LeftTopMargParamLeft,height:LeftTopHeight,width:LeftTopWidth,zIndex:"90"},c_timeout);
+$("#hightLeft").animate({opacity:"1"},c_timeoutOpas);
+$("#center").animate({opacity:"1"},c_timeoutOpas);
+$("#hightRight").animate({marginTop:RightTopMargParamTop,marginLeft:RightTopMargParamLeft,height:RightTopHeight,width:RightTopWidth,zIndex:"90"},c_timeoutLong);
+$("#lowLeft").animate({marginTop:LeftBottomMargParamTop,marginLeft:LeftBottomMargParamLeft,height:LeftBottomHeight,width:LeftBottomWidth,zIndex:"90"},c_timeoutLong);
+$("#lowRight").animate({marginTop:RightBottomMargParamTop,marginLeft:RightBottomMargParamLeft,height:RightBottomHeight,width:RightBottomWidth,zIndex:"90"},c_timeoutLong);
+
+setTimeout(function(){
+	$("#center").attr("class","wCentrBack");
+    $("#hightRight").attr("class","wTopRightBack");
+    $("#hightLeft").attr("class","wTopLeft");
+    $("#lowLeft").attr("class","wBottomLeftBack");
+    $("#lowRight").attr("class","wBottomRightBack");},c_timeout);
+}});
+$("#lowLeft").dblclick(function(){
+if($("#lowLeft").css("height")!=CenterHeight){
+$("#lowLeft").animate({opacity:"0.4"},c_timeoutOpas);
+$("#center").animate({opacity:"1"},c_timeoutOpas);
+$("#lowLeft").animate({marginTop:CenterMargParamTop,marginLeft:CenterMargParamLeft,height:CenterHeight,width:CenterWidth,zIndex:"100"},c_timeout);
+$("#center").animate({marginTop:LeftBottomMargParamTop,marginLeft:LeftBottomMargParamLeft,height:LeftBottomHeight,width:LeftBottomWidth,zIndex:"90"},c_timeout);
+$("#lowLeft").animate({opacity:"1"},c_timeoutOpas);
+$("#center").animate({opacity:"1"},c_timeoutOpas);
+$("#hightRight").animate({marginTop:RightTopMargParamTop,marginLeft:RightTopMargParamLeft,height:RightTopHeight,width:RightTopWidth,zIndex:"90"},c_timeoutLong);
+$("#hightLeft").animate({marginTop:LeftTopMargParamTop,marginLeft:LeftTopMargParamLeft,height:LeftTopHeight,width:LeftTopWidth,zIndex:"90"},c_timeoutLong);
+$("#lowRight").animate({marginTop:RightBottomMargParamTop,marginLeft:RightBottomMargParamLeft,height:RightBottomHeight,width:RightBottomWidth,zIndex:"90"},c_timeoutLong);
+setTimeout(function(){
+	$("#center").attr("class","wCentrBack");
+    $("#hightRight").attr("class","wTopRightBack");
+    $("#hightLeft").attr("class","wTopLeftBack");
+    $("#lowLeft").attr("class","wBottomLeft");
+    $("#lowRight").attr("class","wBottomRightBack");},c_timeout);
+}});
+$("#lowRight").dblclick(function(){
+if($("#lowRight").css("height")!=CenterHeight){
+$("#lowRight").animate({opacity:"0.4"},c_timeoutOpas);
+$("#center").animate({opacity:"1"},c_timeoutOpas);
+$("#lowRight").animate({marginTop:CenterMargParamTop,marginLeft:CenterMargParamLeft,height:CenterHeight,width:CenterWidth,zIndex:"100"},c_timeout);
+$("#center").animate({marginTop:RightBottomMargParamTop,marginLeft:RightBottomMargParamLeft,height:RightBottomHeight,width:RightBottomWidth,zIndex:"90"},c_timeout);
+$("#center").animate({opacity:"1"},c_timeoutOpas);
+$("#lowRight").animate({opacity:"1"},c_timeoutOpas);
+$("#hightRight").animate({marginTop:RightTopMargParamTop,marginLeft:RightTopMargParamLeft,height:RightTopHeight,width:RightTopWidth,zIndex:"90"},c_timeoutLong);
+$("#hightLeft").animate({marginTop:LeftTopMargParamTop,marginLeft:LeftTopMargParamLeft,height:LeftTopHeight,width:LeftTopWidth,zIndex:"90"},c_timeoutLong);
+$("#lowLeft").animate({marginTop:LeftBottomMargParamTop,marginLeft:LeftBottomMargParamLeft,height:LeftBottomHeight,width:LeftBottomWidth,zIndex:"90"},c_timeoutLong);
+setTimeout(function(){
+	$("#center").attr("class","wCentrBack");
+    $("#hightRight").attr("class","wTopRightBack");
+    $("#hightLeft").attr("class","wTopLeftBack");
+    $("#lowLeft").attr("class","wBottomLeftBack");
+    $("#lowRight").attr("class","wBottomRight");},c_timeout);
+}});
+}
+
+function allSee(){
+if ($("#hightRight").css("opacity")=="0.1"){$("#hightRight").animate({opacity:"1"},200);}
+if ($("#hightLeft").css("opacity")=="0.1"){$("#hightLeft").animate({opacity:"1"},200);}
+if ($("#lowLeft").css("opacity")=="0.1"){$("#lowLeft").animate({opacity:"1"},200);}
+if ($("#lowRight").css("opacity")=="0.1"){$("#lowRight").animate({opacity:"1"},200);}
+if ($("#center").css("opacity")=="0.1"){$("#center").animate({opacity:"1"},200);}
+}
+
+function opasityHead(){
+
+if ($("#hightRight").attr("class")=="wTopRight"){$("#hightRight").css("opacity","0.1");}
+if ($("#hightLeft").attr("class")=="wTopLeft"){$("#hightLeft").css("opacity","0.1");}
+if ($("#lowLeft").attr("class")=="wBottomLeft"){$("#lowLeft").css("opacity","0.1");}
+if ($("#lowRight").attr("class")=="wBottomRight"){$("#lowRight").css("opacity","0.1");}
+if ($("#center").attr("class")=="wCentr"){$("#center").css("opacity","0.1");}
+
+
+}
+
+function changeHover(){
+$("#center").mouseover(function(){if($("#center").attr("class")=="wCentrBack"){$("#center").css("z-index","101");}});
+$("#hightRight").mouseover(function(){if($("#hightRight").attr("class")=="wTopRightBack"){$("#hightRight").css("z-index","101");}});
+$("#hightLeft").mouseover(function(){if($("#hightLeft").attr("class")=="wTopLeftBack"){$("#hightLeft").css("z-index","101");}});
+$("#lowLeft").mouseover(function(){if ($("#lowLeft").attr("class")=="wBottomLeftBack"){$("#lowLeft").css("z-index","101");}});
+$("#lowRight").mouseover(function(){if ($("#lowRight").attr("class")=="wBottomRightBack"){$("#lowRight").css("z-index","101");}});
+
+$("#center").mouseout(function(){if($("#center").attr("class")=="wCentrBack"){$("#center").css("z-index","90");}});
+$("#hightRight").mouseout(function(){if($("#hightRight").attr("class")=="wTopRightBack"){$("#hightRight").css("z-index","90");}});
+$("#hightLeft").mouseout(function(){if($("#hightLeft").attr("class")=="wTopLeftBack"){$("#hightLeft").css("z-index","90");}});
+$("#lowLeft").mouseout(function(){if ($("#lowLeft").attr("class")=="wBottomLeftBack"){$("#lowLeft").css("z-index","90");}});
+$("#lowRight").mouseout(function(){if ($("#lowRight").attr("class")=="wBottomRightBack"){$("#lowRight").css("z-index","90");}});
+}
+
+function changeStr(){
+$("#center").dblclick(function(){
+if($("#center").attr("class")=="wCentr")
+{
+}});
+
+$("#hightRight").dblclick(function(){
+
+if($("#hightRight").attr("class")=="wTopRight")
+{
+location.assign("topRight.html");
+}
+});
+
+$("#hightLeft").dblclick(function(){
+if($("#hightLeft").attr("class")=="wTopLeft")
+{
+location.assign("topLeft.html");
+}
+});
+
+$("#lowRight").dblclick(function(){
+if($("#lowRight").attr("class")=="wBottomRight")
+{
+location.assign("bottomRight.html");
+}
+});
+
+$("#lowLeft").dblclick(function(){
+if($("#lowLeft").attr("class")=="wBottomLeft")
+{
+location.assign("bottomLeft.html");
+}
+});
+}
+</script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+                     param();
+                     advent();
+					 changeHover();
+					 changeStr();
+					 }
+);
+</script> 
+<div id="centrWin">
+<div id="center" class="wCentr" > 
+<div id="inCentr" class="wTextCentr">
+<h2 align="center"><b>О сайте<b></h2>
+<h4> <p>Данный сайт написан с целью привлечения внимания работодателя, ищущего исполнителя. На текущем сайте-визитке вы сможете узнать больше информации о соискателе на вакансию в сфере IT <b>Лень Владимире</b>.
+     Здесь представлено портфолио, которое содержит некоторые работы. В резюме вы сможете ознакомиться с моей профессиональной деятельностью
+	 и уровнем образования.</p></h4>
+	 <div class="h40"></div>
+	 <div class="h40"></div>
+	 <h4 style="text-align:right;">Разработчик сайта: Лень В. В.</h4>
+	
+ </div>
+ 
+</div>
+<div id="hightRight" class="wTopRightBack">
+<div id="inCentr" class="wTextCentr" >
+<h2 align="center"><b>Резюме<b></h2>
+<h4>  Проф. навыки:<ul><li>для разработки сайтов: JavaScript, jQuery, HTML, CSS, PHP;</li>
+                       <li>для разработки desktop приложений:  C++, STL, Boost, QT, Visual Studio;</li>
+					   <li>Работаю с системами контроля версий: Git, Svn;</li> 
+					   <li>Работаю с ОС: Windows, Linux;</li>
+					   <li>Работаю с базами данных:BD MySql;</li>
+					   <li>Владею языком запросов:SQL;</li>
+					   <li>Пишу сетевые приложения (клиентские и серверные части) с применением TCP\IP, UDP\IP протоколов.</li>
+					   <li>Владею английским на уровне понимания технической документации</li>
+					   </ul></h4>
+					   <div class="h40"></div>
+	
+ </div> </div>
+<div id="hightLeft" class="wTopLeftBack">
+<div id="inCentr" class="wTextCentr" > 
+<h2 align="center"><b>Портфолио<b></h2>
+<h4><p>Представляю вам некоторые работы, которые вы можете скачать и посмотреть.</p>
+Сайты: <ul><div class="toLeft"><li>текущий</li></div>
+           <div class="toLeft"><li>сайт для салона красоты<a href="http://vivalavita47.ru" class="toRight"> перейти</a></li></div>
+       </ul>
+	   <div class="h20"></div>
+<p>Приложения С++(Windows/Linux):</p>
+<ul><div class="toLeft"><li>приложение для визуальной разработки торговых роботов(Windows)<a href="" download class="toRight"> скачать</a></li></div>
+ <div class="toLeft"><li>приложение для контроля за работой торговых роботов(Windows)<a href="" download class="toRight"> скачать</a></li></div>
+ <div class="toLeft"><li>сетевое приложение контроля за устройством(протокол TCP/IP клиент Windows и Linux)<a href="" download class="toRight"> скачать</a></li></div>
+ <div class="toLeft"><li>сервер для устройства (Windows)<a href="" download class="toRight"> скачать</a></li></div>
+  </ul>
+<div class="h20"></div>
+</div></div>
+	
+<div id="lowRight" class="wBottomRightBack">
+<div id="inCentr" class="wTextCentr" > <div class="h40"></div>
+	</div> 
+	</div>
+<div id="lowLeft" class="wBottomLeftBack"> 
+<div id="inCentr" class="wTextCentr" ><h2 align="center"><b>Контактные данные<b></h2> <div class="h40"></div>
+	</div>
+	</div>
+	<div class="toInfoTop">* Для получения детальной информации совершите двойной щелчек по окну</div></h4>
+</div>
+<div id="adressWin">
+  <div id="info">Разработчик сайта: Лень В. В.</div>
+</div>
+</body>
