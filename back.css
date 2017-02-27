@@ -1,7 +1,6 @@
 
 #centrWinB{
 position:relative;
-height:100%;
 margin:auto;
 padding:auto;
 border-style:solid;
@@ -13,12 +12,9 @@ border-radius:20px;
 }
 
 #centerB{
-position:absolute;
-z-index:100;
+position:relative;
 width:90%;
-height:90%;
-margin-left:5%;
-margin-top:5%;
+margin:5%;
 border-radius:20px;
-background:rgba(200,200,200,0.6);
+background:rgba(200,200,200,0.8);
 }
