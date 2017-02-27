@@ -55,7 +55,7 @@ function param(){
 }
 
 function advent(){
-$("#center").dblclick(function(){
+$("#center").click(function(){
 if($("#center").css("height")!=CenterHeight){
 $("#center").animate({opacity:"0.4"},c_timeoutOpas).animate({marginTop:CenterMargParamTop,marginLeft:CenterMargParamLeft,height:CenterHeight,width:CenterWidth,zIndex:"100"},c_timeout)
                                          .animate({opacity:"1"},c_timeoutOpas);
@@ -71,7 +71,7 @@ setTimeout(function(){
     $("#lowLeft").attr("class","wBottomLeftBack");
     $("#lowRight").attr("class","wBottomRightBack");},c_timeout);
 }});
-$("#hightRight").dblclick(function(){
+$("#hightRight").click(function(){
 if($("#hightRight").css("height")!=CenterHeight){
 
 $("#hightRight").animate({opacity:"0.4"},c_timeoutOpas).animate({marginTop:CenterMargParamTop,marginLeft:CenterMargParamLeft,height:CenterHeight,width:CenterWidth,zIndex:"100"},c_timeout)
@@ -90,7 +90,7 @@ setTimeout(function(){
     $("#lowLeft").attr("class","wBottomLeftBack");
     $("#lowRight").attr("class","wBottomRightBack");},c_timeout);
 }});
-$("#hightLeft").dblclick(function(){
+$("#hightLeft").click(function(){
 if($("#hightLeft").css("height")!=CenterHeight){
 $("#hightLeft").animate({opacity:"0.4"},c_timeoutOpas);
 $("#center").animate({opacity:"1"},c_timeoutOpas);
@@ -109,7 +109,7 @@ setTimeout(function(){
     $("#lowLeft").attr("class","wBottomLeftBack");
     $("#lowRight").attr("class","wBottomRightBack");},c_timeout);
 }});
-$("#lowLeft").dblclick(function(){
+$("#lowLeft").click(function(){
 if($("#lowLeft").css("height")!=CenterHeight){
 $("#lowLeft").animate({opacity:"0.4"},c_timeoutOpas);
 $("#center").animate({opacity:"1"},c_timeoutOpas);
@@ -127,7 +127,7 @@ setTimeout(function(){
     $("#lowLeft").attr("class","wBottomLeft");
     $("#lowRight").attr("class","wBottomRightBack");},c_timeout);
 }});
-$("#lowRight").dblclick(function(){
+$("#lowRight").click(function(){
 if($("#lowRight").css("height")!=CenterHeight){
 $("#lowRight").animate({opacity:"0.4"},c_timeoutOpas);
 $("#center").animate({opacity:"1"},c_timeoutOpas);
@@ -181,12 +181,12 @@ $("#lowRight").mouseout(function(){if ($("#lowRight").attr("class")=="wBottomRig
 }
 
 function changeStr(){
-$("#center").dblclick(function(){
+$("#center").click(function(){
 if($("#center").attr("class")=="wCentr")
 {
 }});
 
-$("#hightRight").dblclick(function(){
+$("#hightRight").click(function(){
 
 if($("#hightRight").attr("class")=="wTopRight")
 {
@@ -194,21 +194,21 @@ location.assign("topRight.html");
 }
 });
 
-$("#hightLeft").dblclick(function(){
+$("#hightLeft").click(function(){
 if($("#hightLeft").attr("class")=="wTopLeft")
 {
 location.assign("topLeft.html");
 }
 });
 
-$("#lowRight").dblclick(function(){
+$("#lowRight").click(function(){
 if($("#lowRight").attr("class")=="wBottomRight")
 {
 location.assign("bottomRight.html");
 }
 });
 
-$("#lowLeft").dblclick(function(){
+$("#lowLeft").click(function(){
 if($("#lowLeft").attr("class")=="wBottomLeft")
 {
 location.assign("bottomLeft.html");
