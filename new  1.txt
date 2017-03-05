@@ -1,3 +1,5 @@
 G:/wds/portFol/index.html
 
 http://vivalavita47.ru/portfol
+
+<h4><div class="toInfoTop">* Для получения детальной информации совершите двойной щелчек по окну</div></h4>
