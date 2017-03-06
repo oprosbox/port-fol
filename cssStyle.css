@@ -22,89 +22,89 @@ height:1200px;
 /* tablet */
 @media screen and (max-height: 1024px) and (orientation: landscape){
 #centrWin{
-width:1024px;
-height:1024px;
+width:1000px;
+height:1000px;
 }
 }
 
 @media screen and (max-height: 800px) and (orientation: landscape){
 #centrWin{
-width:800px;
-height:800px;
+width:770px;
+height:770px;
 }
 }
 
 @media screen and (max-height: 768px) and (orientation: landscape)  {
 #centrWin{
-width:768px;
-height:768px;}
+width:740px;
+height:740px;}
 }
 
 @media screen and (max-height: 533px) and (orientation: landscape) {
 #centrWin{
-width:533px;
-height:533px;}
+width:500px;
+height:500px;}
 }
 
 @media screen and (max-height: 603px) and (orientation: landscape) {
 #centrWin{
-width:603px;
-height:603px;}
+width:580px;
+height:580px;}
 }
 
 @media screen and (max-height: 600px) and (orientation: landscape) {
 #centrWin{
-width:600px;
-height:600px;}
+width:580px;
+height:580px;}
 }
 
 @media screen and (max-height: 480px) and (orientation: landscape) {
 #centrWin{
-width:480px;
-height:480px;}
+width:420px;
+height:420px;}
 }
 
 @media screen and (max-height: 414px) and (orientation: landscape) {
 #centrWin{
-width:414px;
-height:414px;}
+width:400px;
+height:400px;}
 }
 
 @media screen and (max-height: 412px) and (orientation: landscape) {
 #centrWin{
-width:412px;
-height:412px;}
+width:400px;
+height:400px;}
 }
 
 @media screen and (max-height: 384px) and (orientation: landscape) {
 #centrWin{
-width:384px;
-height:384px;}
+width:320px;
+height:320px;}
 }
 
 @media screen and (max-height: 375px) and (orientation: landscape) {
 #centrWin{
-width:375px;
-height:375px;}
+width:320px;
+height:320px;}
 }
 
 @media screen and (max-height: 360px) and (orientation: landscape) {
 #centrWin{
-width:360px;
-height:360px;}
+width:320px;
+height:320px;}
 }
 
 @media screen and (max-height: 320px) and (orientation: landscape){
 #centrWin{
-width:320px;
-height:320px;}
+width:300px;
+height:300px;}
 }
 /*---------------------------------------------------------------------------*/
 @media screen and (max-width: 1240px) and (orientation: portrait){
 #centrWin{
 position:absolute;
-width:1200px;
-height:1200px;
+width:1024px;
+height:1024px;
 margin-top:30%;
 margin-bottom:auto;
 }
@@ -298,21 +298,13 @@ height:100%;
 
 #adressWin{
 position:relative;
-<<<<<<< HEAD
-margin-left:auto;
-margin-right:auto;
-	background: rgba(210,210,210,0.8);
-	border-top: 1px solid #fff;
-	padding: 30px 0;
-	width: 100%;
-=======
 	background: rgba(210,210,210,0.8);
 	border-top: 5px solid #fff;
 	padding:20px;
 	height:30px;
 	width:100%;
 	bottom:0px;
->>>>>>> ef686755157dcbb45c697043d289c2c4e564ed2d
+
 }
 
 body {
@@ -470,4 +462,24 @@ position:relative;
 	display:inline;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+a.toRightHead{
+position:relative;
+text-align:right;
+float:right;
+text-decoration:none;
+background-color:rgba(230,230,230,0.6);
+color:blue;
+margin:10px;
+padding:5px;
+}
+
+a.toRightHead:hover   {
+position:relative;
+text-align:right;
+float:right;
+background-color:rgb(30,30,30);
+color:white;
+padding:5px;
 }
