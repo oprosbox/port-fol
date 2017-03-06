@@ -3,6 +3,7 @@
 <head>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=yes">
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js">
 </script>
@@ -12,10 +13,11 @@
  c_timeout=1000;
    c_timeoutLong=2600;
    c_timeoutOpas=800;
+   baseWidth;
    
 function param(){
-   $("#centrWin").css("width",(screen.height-160)+"px");
-
+    //if(screen.height>screen.width){baseWidth=screen.width;}else {baseWidth=screen.height;}
+  //$("#centrWin").css("height", $("#centrWin").css("width"));
  CenterWidth=$("#center").css("width");
  $("#center").css("height",CenterWidth);
  $("#center").css("height",CenterWidth);
@@ -220,7 +222,6 @@ location.assign("bottomLeft.html");
 </head>
 
 <body>
-
 <script type="text/javascript">
 $(document).ready(function(){
                      param();
@@ -230,6 +231,7 @@ $(document).ready(function(){
 					 }
 );
 </script> 
+<div id="begin">
 <div id="centrWin">
 <div id="center" class="wCentr" > 
 <div id="inCentr" class="wTextCentr">
@@ -239,7 +241,7 @@ $(document).ready(function(){
 	 и уровнем образования.</p></h4>
 	 <div class="h40"></div>
 	 <div class="h40"></div>
-	 <h4 style="text-align:right;">Разработчик сайта: Лень В. В.</h4>
+	 <h4>Разработчик сайта: Лень В. В.</h4>
 	
  </div>
  
@@ -251,8 +253,8 @@ $(document).ready(function(){
                        <li>для разработки desktop приложений:  C++, STL, Boost, QT, Visual Studio;</li>
 					   <li>Работаю с системами контроля версий: Git, Svn;</li> 
 					   <li>Работаю с ОС: Windows, Linux;</li>
-					   <li>Работаю с базами данных:BD MySql;</li>
-					   <li>Владею языком запросов:SQL;</li>
+					   <li>Работаю с базами данных: BD MySql;</li>
+					   <li>Владею языком запросов: SQL;</li>
 					   <li>Пишу сетевые приложения (клиентские и серверные части) с применением TCP\IP, UDP\IP протоколов.</li>
 					   <li>Владею английским на уровне понимания технической документации</li>
 					   </ul></h4>
@@ -267,7 +269,7 @@ $(document).ready(function(){
            <div class="toLeft"><li>сайт для салона красоты<a href="http://vivalavita47.ru" class="toRight"> перейти</a></li></div>
        </ul>
 	   <div class="h20"></div>
-<p>Приложения С++(Windows/Linux):</p>
+<p>Приложения С++ (Windows\Linux):</p>
 <ul><div class="toLeft"><li>приложение для визуальной разработки торговых роботов(Windows)<a href="" download class="toRight"> скачать</a></li></div>
  <div class="toLeft"><li>приложение для контроля за работой торговых роботов(Windows)<a href="" download class="toRight"> скачать</a></li></div>
  <div class="toLeft"><li>сетевое приложение контроля за устройством(протокол TCP/IP клиент Windows и Linux)<a href="" download class="toRight"> скачать</a></li></div>
@@ -284,7 +286,9 @@ $(document).ready(function(){
 <div id="inCentr" class="wTextCentr" ><h2 align="center"><b>Контактные данные<b></h2> <div class="h40"></div>
 	</div>
 	</div>
-	<div class="toInfoTop">* Для получения детальной информации совершите двойной щелчек по окну</div></h4>
+	</h4>
+
+</div>
 </div>
 <div id="adressWin">
   <div id="info">Разработчик сайта: Лень В. В.</div>
