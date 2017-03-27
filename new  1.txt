@@ -3,3 +3,8 @@ G:/wds/portFol/index.html
 http://vivalavita47.ru/portfol
 
 <h4><div class="toInfoTop">* Для получения детальной информации совершите двойной щелчек по окну</div></h4>
+
+http://utp.sberbank-ast.ru/SB/NBT/ParticipantListAll/0/0/0/0/SB/Dictionary/purchasegroup/0
+
+Create table regions (key_reg INT NOT NULL PRIMARY KEY,region varchar(30));
+INSERT INTO regions values(1,'Ростовская область');
